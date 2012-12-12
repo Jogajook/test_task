@@ -1,0 +1,194 @@
+{
+    "elements": {
+        "CONTACTS": {
+            "type": "text",
+            "options": {
+                "class": "main_sect",
+                "value": "Контакты"
+            }
+        },
+        "address_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "Домашний адрес"
+            }
+        },
+        "address_country": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Страна",
+                "validators": {
+                    "notempty": {
+                        "validator": "NotEmpty",
+                        "options": {
+                            "messages": { "isEmpty": "Пожалуйста, укажите страну" }
+                        }
+                    }
+                },
+                "required": "true"
+            }
+        },
+        "address_city": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Город",
+                "validators": {
+                    "notempty": {
+                        "validator": "NotEmpty",
+                        "options": {
+                            "messages": { "isEmpty": "Пожалуйста, укажите город" }
+                        }
+                    }
+                },
+                "required": "true"
+            }
+        },
+        "address_street_name": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Улица",
+                "validators": {
+                    "notempty": {
+                        "validator": "NotEmpty",
+                        "options": {
+                            "messages": { "isEmpty": "Пожалуйста, укажите улицу" }
+                        }
+                    }
+                },
+                "required": "true"
+            }
+        },
+        "address_street_num": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Номер дома"
+            }
+        },
+        "phones_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "Телефоны"
+            }
+        },
+        "phone_home": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Домашний"
+            }
+        },
+        "phone_work": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Рабочий"
+            }
+        },
+        "phone_mobile": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Мобильный",
+                "validators": {
+                    "notempty": {
+                        "validator": "NotEmpty",
+                        "options": {
+                            "messages": { "isEmpty": "Пожалуйста, укажите номер телефона" }
+                        }
+                    }
+                },
+                "required": "true"
+            }
+        },
+        "fax": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Факс"
+            }
+        },
+        "emails_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "E-Mail"
+            }
+        },
+        "email_primary": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Основной"
+            }
+        },
+        "email_work": {
+            "type": "text",
+            "options": {
+                "class": "value",
+                "label": "Рабочий"
+            }
+        },
+        "ABOUT": {
+            "type": "text",
+            "options": {
+                "class": "main_sect",
+                "value": "О себе"
+            }
+        },
+        "short_info_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "Краткая информация"
+            }
+        },
+        "short_info": {
+            "type": "textarea",
+            "options": {
+                "class": "value",
+                "cols": "80",
+                "rows": "8"
+            }
+        },
+        "treatment_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "Стратегия лечения"
+            }
+        },
+        "treatment": {
+            "type": "textarea",
+            "options": {
+                "class": "value",
+                "cols": "80",
+                "rows": "8"
+            }
+        },
+        "experience_title": {
+            "type": "text",
+            "options": {
+                "class": "sub_sect",
+                "value": "Общий стаж работы"
+            }
+        },
+        "experience": {
+            "type": "text",
+            "options": {
+                "class": "value"
+            }
+        },
+
+        "submit": {
+            "type": "submit",
+            "options": { "label": "Сохранить" }
+        }
+    }
+
+}

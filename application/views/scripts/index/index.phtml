@@ -1,0 +1,34 @@
+<?php $baseurl = Zend_Controller_Front::getInstance()->getBaseUrl(); ?>
+<?php $this->headScript()->appendFile($baseurl . '/js/' . "admin.js"); ?>
+<style>
+    .sub_sect_wrap {
+        font-weight: bold;
+        font-size: 110%;
+    }
+    .main_sect_wrap {
+        font-weight: bold;
+        font-size: 150%;
+    }
+</style>
+<h1 class='desc'><?php echo $this->nameService . ' - ' . 'Редактирование профиля' ?></h1>
+
+<?php if ($this->message) { ?>
+    <div class="msg"><?php echo $this->message ?></div>
+<?php }?>
+<?php if ($this->error) { ?>
+    <div class="err"><?php echo $this->error ?></div>
+<?php }?>
+
+<?php if (isset($this->form) && $this->form->getElements()) { ?>
+<form method="post" class="user_profile">
+<?php foreach($this->form->getElements() as $element) {
+    if ($element->getAttrib("class") == 'main_sect') { ?>
+        <div class=main_sect_wrap><?php echo $element->getValue() ?></div>
+    <?php } elseif($element->getAttrib("class") == 'sub_sect')  { ?>
+        <div class=sub_sect_wrap><?php echo $element->getValue() ?></div>
+    <?php } else { ?>
+        <div class="elem_wrap"><?php echo $element ?></div>
+    <?php } ?>
+<?php } ?>
+</form>
+<?php }?>
